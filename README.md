@@ -84,6 +84,27 @@ As a marketing specialist, I want to target high-risk customers with personalize
 
 As a system, I want to provide churn predictions via an API so that other applications can consume the results.
 
+## Test Cases
+
+### Test Case 1
+
+**Scenario:** Identify high-risk customer
+
+* Input: Customer with low activity and high tenure
+* Expected Output: High churn probability (> 0.7)
+* Expected Segment: High Risk
+
+---
+
+### Test Case 2
+
+**Scenario:** Identify low-risk customer
+
+* Input: Active customer with recent transactions
+* Expected Output: Low churn probability (< 0.3)
+* Expected Segment: Low Risk
+
+
 ## Technologies
 
 * Python
