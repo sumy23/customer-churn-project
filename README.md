@@ -1,5 +1,11 @@
 # Customer Churn Prediction System
 
+## Live Demo
+[Try the App](https://customer-churn-project-hmvake7mqbthfdgcgdntmz.streamlit.app/)
+
+## Business Problem
+...
+
 ## Business Problem
 
 Customer churn leads to significant revenue loss.
