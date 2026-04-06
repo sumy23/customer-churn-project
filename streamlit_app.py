@@ -6,7 +6,11 @@ st.set_page_config(page_title="Customer Churn Prediction", layout="centered")
 
 @st.cache_resource
 def load_model():
-    return joblib.load("churn_model.pkl")
+    try:
+        return joblib.load("churn_model.pkl")
+    except Exception as e:
+        st.error(f"Model load error: {e}")
+        st.stop()
 
 model = load_model()
 
